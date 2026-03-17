@@ -1,5 +1,6 @@
 
 # Elevate Configuration
+baseurl: "/elevate"
 
 site_settings:
   # Theme options: indigo, emerald, slate, midnight, amber, rose, cyan, mono
