@@ -1,1 +1,13 @@
-document.addEventListener("DOMContentLoaded",()=>{const r=document.documentElement;const b=document.getElementById("theme-toggle");b.onclick=()=>{const c=r.getAttribute("data-theme");const n=c==="midnight"?"indigo":"midnight";r.setAttribute("data-theme",n);localStorage.setItem("theme",n)};const s=localStorage.getItem("theme");if(s)r.setAttribute("data-theme",s)});
+
+document.addEventListener("DOMContentLoaded",()=>{
+const root=document.documentElement;
+const btn=document.getElementById("theme-toggle");
+btn.onclick=()=>{
+const cur=root.getAttribute("data-theme");
+const next=cur==="midnight"?"indigo":"midnight";
+root.setAttribute("data-theme",next);
+localStorage.setItem("theme",next);
+};
+const saved=localStorage.getItem("theme");
+if(saved) root.setAttribute("data-theme",saved);
+});

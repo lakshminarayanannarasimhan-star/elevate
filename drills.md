@@ -1,18 +1,14 @@
 
 ---
 layout: drill
-title: "Drill Title"
+title: Drills
 ---
 
-# Problem
+# Sample Drill
 
-Describe situation
+Problem...
 
 <div class="drill-toggle">Show Answer</div>
 <div class="drill-answer">
-
-## Explanation
-
-## Pattern Extracted
-
+Explanation...
 </div>
