@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-theme="{{ site.site_settings.theme }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | {{ site.title }}</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div>
+    <div class="logo">{{ site.title }}</div>
+    <div class="tagline">{{ site.tagline }}</div>
+  </div>
+
+  <nav class="nav">
+    {% for item in site.navigation %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
+    <input id="search-input" placeholder="Search">
+    <div id="search-results"></div>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
+
+<main class="container">
+{{ content }}
+</main>
+
+<script src="/assets/js/theme-toggle.js"></script>
+<script src="/assets/js/search.js"></script>
+
+</body>
+</html>

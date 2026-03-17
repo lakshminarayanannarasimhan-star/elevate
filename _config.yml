@@ -1,0 +1,24 @@
+site_settings:
+  theme: indigo
+  feel: balanced
+  accent: medium
+  gradient_style: subtle
+
+navigation:
+  - title: Home
+    url: /
+  - title: Think Tank
+    url: /think-tank
+  - title: AI
+    url: /ai-mastery
+  - title: Drills
+    url: /drills
+  - title: Writing
+    url: /writing
+  - title: Publications
+    url: /publications
+  - title: About
+    url: /about
+
+title: Elevate
+tagline: AI · Strategy · Systems Thinking

@@ -1,0 +1,1 @@
+fetch('/search.json').then(r=>r.json()).then(d=>{const i=document.getElementById("search-input");const o=document.getElementById("search-results");i.addEventListener("input",e=>{const q=e.target.value.toLowerCase();o.innerHTML=d.filter(p=>p.title.toLowerCase().includes(q)).map(r=>`<div><a href="${r.url}">${r.title}</a></div>`).join("")})});
